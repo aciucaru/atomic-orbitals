@@ -1,10 +1,13 @@
 # Atomic orbitals
 #### Video Demo: https://youtu.be/2JuG58yBdWg
 #### Description:
-#### Working version: [working project](https://main--atomic-orbitals-4e8b49.netlify.app/) hosted for free on Netlify
-
 The project draws the atomic orbitals of a chemical element. It allows the user to select a chemical element from the periodic table and it draws all the orbitalls corresponding the the number of electrons of that element. It only plots orbitals up to 28 protons (and thus, also 28 electrons), and then just plots the first orbital for all the other chemical
 elements.
+
+#### Working version: [working project](https://main--atomic-orbitals-4e8b49.netlify.app/) hosted for free on Netlify
+
+![screenshot](screenshots/atomic-orbitals-1.jpg)
+
 You can also choose between 3 type of periodic tables:
 * classical table, by Dmitri Mendeleev (published in 1869 an refined afterwards)
 * spiral table, by Otto Theodor Benfey (published in 1964)
@@ -73,5 +76,22 @@ This file bassically contains one important function, the schrodingerProbabAmpli
 * z: number
 n, l, ml are quantum numbers that describes a unique atomic orbital
 
-x, y, z are the coordinates of a 3D point foar wich the function gives the Schrodinger probability amplitude
+x, y, z are the coordinates of a 3D point for wich the function gives the Schrodinger probability amplitude
 
+The result of this function is a complex number. The squred modulus of that complex number gives the probability of a rand 3D point located at x, y, z to be part of the atomic orbital corresponding to n,l, ml quantum numbers. It basically gives the intesity (the opacity) of the plotted orbital: the heiger the probability, the higher the intensity (opacity) that is plotted.
+
+#### Data constants (chemical-constants.ts)
+This file contains all chemical elements instantiated by hand (yes, it took some time :-) ), all put inside an array. The array is used to populate the Mendeleev periodic table and as a source of data from where to get the current selected chemical element.
+
+#### Components (componennts folder)
+This folder contains all the Svelte components and the main component is AppMain.svelte.
+
+Some of the notable components are:
+* AbubakrPeriodicTable.svelte: is a Svelte component that imports an external .svg file. The .svg file has no code inside it, but has strategically placed ids which allow to find out what chemical element has been clicked on the screen; it also has classes wich allows to easily change colors and visual appearence.
+
+* BenfeyPeriodicTable.svelte: is a Svelte component similar to the previous one
+
+* OrbitalPlot.svelte: a component that draws a single orbital; the component always draws the same type of orbital (if applicable) and knows what orbital to draw from it's parent, OrbitalsPlotGroup.svelte, which sends it the following props:
+n, l, ml (the quantum numbers specific to a particular orbital), gridCol, gridRow - the position of the orbital in a grid
+
+* OrbitalsPlotGroup.svelte: contains all the orbitals, but not all orbitals will be plotted, just the ones required to store all the electrons a the current chemical element
