@@ -4,7 +4,7 @@
 The project draws the atomic orbitals of a chemical element. It allows the user to select a chemical element from the periodic table and it draws all the orbitalls corresponding the the number of electrons of that element. It only plots orbitals up to 28 protons (and thus, also 28 electrons), and then just plots the first orbital for all the other chemical
 elements.
 
-#### Working version: [working project](https://main--atomic-orbitals-4e8b49.netlify.app/) hosted for free on Netlify
+#### Working version: [project](https://main--atomic-orbitals-4e8b49.netlify.app/) hosted for free on Netlify
 
 ![screenshot](screenshots/atomic-orbitals-1.png)
 
