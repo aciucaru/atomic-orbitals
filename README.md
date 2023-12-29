@@ -6,7 +6,7 @@ elements.
 
 #### Working version: [working project](https://main--atomic-orbitals-4e8b49.netlify.app/) hosted for free on Netlify
 
-![screenshot](screenshots/atomic-orbitals-1.jpg)
+![screenshot](screenshots/atomic-orbitals-1.png)
 
 You can also choose between 3 type of periodic tables:
 * classical table, by Dmitri Mendeleev (published in 1869 an refined afterwards)
