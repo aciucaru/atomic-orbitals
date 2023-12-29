@@ -111,4 +111,4 @@ So, for example, the following code would trigger a redraw: $currentElement = ne
 
 We can also use Svelte "reactive statement", when we need to change an observable store inside a function and not by assignment: $: drawOrbital(n, l, ml, $currentElement);
 
-In Svelte, "reactive statement" start with $: (dollar followed vy colon).
+In Svelte, "reactive statements" start with $: (dollar followed by colon).
