@@ -1,5 +1,5 @@
 import { Subshell, SubshellType, Shell, ShellType, type ChemicalElement, ElectronConfiguration,
-        shell, s, p, d, f, type PlottedOrbitals, type MendeleevArrangement, ElementCategory } from "./model";
+        shell, s, p, d, f, type PlottedOrbital, type MendeleevArrangement, ElementCategory } from "./model";
 
 export const chemicalElements: Array<ChemicalElement> =
 [

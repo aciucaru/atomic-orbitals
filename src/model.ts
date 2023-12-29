@@ -418,55 +418,6 @@ export class ElectronConfiguration
     }
 }
 
-export interface PlottedOrbitals
-{
-    n: number;
-    l: number;
-    ml: number;
-    minElectrons: number;
-    maxElectrons: number;
-
-    plotCol: number;
-    plotRow: number;
-}
-
-export function generatePlottedOrbitals(energyLevels: number): Array<PlottedOrbitals>
-{
-    const plottedOrbitals: PlottedOrbitals[] = [];
-    const M_MAX_LEVELS = energyLevels * 2 - 1;
-    let row = 0;
-    let col = 0;
-    let sum = 0;
-    let ml = 0;
-    let minElectrons = 0;
-    let maxElectrons = 0;
-    let index = 0; // the general index of all the nested loops, it increases by 1 each iteration, usefull for array index
-    // for each energy level 'n'
-    for (let n = 1; n <= energyLevels; n++)
-    {
-        sum += (n - 1);
-        for (let l = 0; l < n; l++)
-        {
-            row = sum + l + ORBITAL_PLOT_GROUP_HEADER_ROWS;
-            for (let mIndex = 0; mIndex < l*2 + 1; mIndex++)
-            {
-                ml = mIndex - l;
-                minElectrons = 2 * mIndex + 1;
-                maxElectrons = minElectrons + 1;
-                col = ml + Math.floor(M_MAX_LEVELS / 2) + ORBITAL_PLOT_GROUP_LEFT_COLS;
-                
-                plottedOrbitals[index] = { n: n, l: l, ml: ml,
-                                            minElectrons:minElectrons, maxElectrons: maxElectrons,
-                                            plotCol: col, plotRow: row };
-
-                index++;
-            }
-        }
-    }
-
-    return plottedOrbitals;
-}
-
 export enum ElementCategory
 {
     ALKALI_METAL = 'ALKALI_METAL',
@@ -499,4 +450,53 @@ export interface MendeleevArrangement
     symbol: string;
     col: number;
     row: number;
+}
+
+export interface PlottedOrbital
+{
+    n: number;
+    l: number;
+    ml: number;
+    minElectrons: number;
+    maxElectrons: number;
+
+    plotCol: number;
+    plotRow: number;
+}
+
+export function generatePlottedOrbitals(energyLevels: number): Array<PlottedOrbital>
+{
+    const plottedOrbitals: PlottedOrbital[] = [];
+    const M_MAX_LEVELS = energyLevels * 2 - 1;
+    let row = 0;
+    let col = 0;
+    let sum = 0;
+    let ml = 0;
+    let minElectrons = 0;
+    let maxElectrons = 0;
+    let index = 0; // the general index of all the nested loops, it increases by 1 each iteration, usefull for array index
+    // for each energy level 'n'
+    for (let n = 1; n <= energyLevels; n++)
+    {
+        sum += (n - 1);
+        for (let l = 0; l < n; l++)
+        {
+            row = sum + l + ORBITAL_PLOT_GROUP_HEADER_ROWS;
+            for (let mIndex = 0; mIndex < l*2 + 1; mIndex++)
+            {
+                ml = mIndex - l;
+                minElectrons = 2 * mIndex + 1;
+                maxElectrons = minElectrons + 1;
+                col = ml + Math.floor(M_MAX_LEVELS / 2) + ORBITAL_PLOT_GROUP_LEFT_COLS;
+                
+                plottedOrbitals[index] = { n: n, l: l, ml: ml,
+                                            minElectrons:minElectrons, maxElectrons: maxElectrons,
+                                            plotCol: col, plotRow: row };
+
+                index++;
+            }
+        }
+    }
+
+    return plottedOrbitals;
 }
