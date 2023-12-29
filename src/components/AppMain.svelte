@@ -52,9 +52,9 @@
         display: flex;
         flex-flow: column nowrap;
         /* set alignment on main axis */
-        justify-content: center;
+        justify-content: flex-start;
         /* set alingment on cross-axis */
-        align-items: center;
+        align-items: flex-start;
         /* set space between flex lines */
         align-content: center;
         gap: 0px;
