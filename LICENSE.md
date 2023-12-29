@@ -25,6 +25,7 @@ SOFTWARE.
 
 
 2. Below is the list of images used in this software and their license:
+
 2.1 src/assets/formulas-background.jpg:
 Image by [Freepik](https://www.freepik.com/free-vector/hand-drawn-scientific-formulas-chalkboard_7465599.htm#query=physics%20background&position=8&from_view=keyword&track=ais&uuid=c0ad5447-2189-4168-bf6b-40902e8257f9) for details and license.
 
