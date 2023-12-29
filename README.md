@@ -35,7 +35,7 @@ This project uses 2 images from external sources:
 * the Theodor Benfey spiral periodic table image: [Elementspiral_(polyatomic).svg](https://en.wikipedia.org/wiki/File:Elementspiral_(polyatomic).svg), made and uploaded by DePiep ([DePiep](https://commons.wikimedia.org/wiki/User:DePiep)) on Wikipedia, licensed under Creative Commons CC BY-SA 3.0 Deed license: [CC BY-SA 3.0 DEED](https://creativecommons.org/licenses/by-sa/3.0/deed.en).
 
 ### Personal images
-I have also made a personal version of this Mohammed Abubakr circular periodic table, using the following Wikipedia image as reference only (I did not modify it): [Circular_form_of_periodic_table.svg](https://en.wikipedia.org/wiki/File:Circular_form_of_periodic_table.svg), made and uploaded by Cbuckley ([Cbuckley](https://en.wikipedia.org/wiki/User:Cbuckley)) on Wikipedia, licensed under Creative Commons CC-BY 3.0 DEED license: [CC-BY 3.0 DEED](https://creativecommons.org/licenses/by/3.0/deed.en). I did not modify this image, I have made a personal version of it which is 100% my own work, in Inkscape, but is stiil mentioned because it was the source of inspiration on my own .svg image.
+I have also made a personal version of this Mohammed Abubakr circular periodic table, using the following Wikipedia image as reference only (I did not modify it): [Circular_form_of_periodic_table.svg](https://en.wikipedia.org/wiki/File:Circular_form_of_periodic_table.svg), made and uploaded by Cbuckley ([Cbuckley](https://en.wikipedia.org/wiki/User:Cbuckley)) on Wikipedia, licensed under Creative Commons CC-BY 3.0 DEED license: [CC-BY 3.0 DEED](https://creativecommons.org/licenses/by/3.0/deed.en). I did not modify this image, I have made a personal version of it which is 100% my own work, in Inkscape, but is still mentioned it because it was the source of inspiration on my own .svg image.
 
 ### Technologies used
 This web application (which is basically a webpage) was made with the following:
@@ -78,7 +78,7 @@ n, l, ml are quantum numbers that describes a unique atomic orbital
 
 x, y, z are the coordinates of a 3D point for wich the function gives the Schrodinger probability amplitude
 
-The result of this function is a complex number. The squred modulus of that complex number gives the probability of a rand 3D point located at x, y, z to be part of the atomic orbital corresponding to n,l, ml quantum numbers. It basically gives the intesity (the opacity) of the plotted orbital: the heiger the probability, the higher the intensity (opacity) that is plotted.
+The result of this function is a complex number. The squared modulus of that complex number gives the probability of a rand 3D point located at x, y, z to be part of the atomic orbital corresponding to n,l, ml quantum numbers. It basically gives the intesity (the opacity) of the plotted orbital: the heiger the probability, the higher the intensity (opacity) that is plotted.
 
 #### Data constants (chemical-constants.ts)
 This file contains all chemical elements instantiated by hand (yes, it took some time :-) ), all put inside an array. The array is used to populate the Mendeleev periodic table and as a source of data from where to get the current selected chemical element.
