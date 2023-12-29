@@ -94,4 +94,21 @@ Some of the notable components are:
 * OrbitalPlot.svelte: a component that draws a single orbital; the component always draws the same type of orbital (if applicable) and knows what orbital to draw from it's parent, OrbitalsPlotGroup.svelte, which sends it the following props:
 n, l, ml (the quantum numbers specific to a particular orbital), gridCol, gridRow - the position of the orbital in a grid
 
-* OrbitalsPlotGroup.svelte: contains all the orbitals, but not all orbitals will be plotted, just the ones required to store all the electrons a the current chemical element
+* OrbitalsPlotGroup.svelte: contains all the orbitals, but not all orbitals will be plotted, just the ones required to store all the electrons of the current chemical element
+
+* PeriodicTableDisplay.svelte: displays one of the 3 possible periodic tables: Mendeleev, Benfey, Abubakr
+
+* PeriodicTableSelector.svelte: selects one of the 3 periodic tables: Mendeleev, Benfey, Abubakr
+
+#### Stores (store.ts)
+In order for the components to react to state changes, such as selecting a different chemical element or selecting a different periodic table, the application uses Svelte stores.
+
+Contrary to their name, Svelte stores are not real stores, such as Redux stores, they are actually observale object, similar tothe ones provided by RxJS.
+
+In Svelte, stores are prefixed by a dollar sign $ (sintactic sugar) and when an assignment is made to a Svelte store, that triggers the new value to be sent to all it's observers.
+
+So, for example, the following code would trigger a redraw: $currentElement = newElement;
+
+We can also use Svelte "reactive statement", when we need to change an observable store inside a function and not by assignment: $: drawOrbital(n, l, ml, $currentElement);
+
+In Svelte, "reactive statement" start with $: (dollar followed vy colon).
