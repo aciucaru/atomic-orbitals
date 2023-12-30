@@ -51,16 +51,16 @@ This file contains all the classes and interfaces that abstract the data used by
 - ShellType: the type of an electron's main shell: k, l, m, n, o (corresponding to "n" quantum number: n = 1, 2, 3, 4, 5)
 - Shell: a main shell of an atom; an atom can have one or more shells, a single shell can have one or more subshells and a subshell can have one or more orbitals
 - ElectronConfiguration: represents all the shells of an atom (an atom can have one or more shells), stored as an array of Shells
-- ElementCategory: represents the category of a chemical elment:
-   + ALKALI_METAL,
-   + ALKALINE_EARTH_METAL,
-   + TRANSITION_METAL,
-   + POST_TRANSITION_METAL,
-   + METALLOID,
-   + REACTIVE_NONMETAL,
-   + NOBLE_GAS,
-   + LATHANIDE,
-   + ACTINIDE,
+- ElementCategory: represents the category of a chemical element:
+   + ALKALI_METAL
+   + ALKALINE_EARTH_METAL
+   + TRANSITION_METAL
+   + POST_TRANSITION_METAL
+   + METALLOID
+   + REACTIVE_NONMETAL
+   + NOBLE_GAS
+   + LATHANIDE
+   + ACTINIDE
    + OTHER
 - ChemicalElement: represents the abstractization of a chemical element (e.g. Hydrogen, Helium, etc.); it contains the chemical symbol (e.g. H, He) which is also used as a unique key of the chemical element and, amongst others, it's ElectronConfiguration
 - PlottedOrbital: represent an atomic orbital with extra information for plotting (such as row and column)
