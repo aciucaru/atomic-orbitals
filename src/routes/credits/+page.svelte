@@ -87,6 +87,6 @@
         border: solid 1px hsl(0, 0%, 30%);
     }
 
-    .scrollable-content a { color: hsla(210, 40%, 40%); }
-    .scrollable-content a:hover { color: hsl(290, 30%, 40%); }
+    .scrollable-content a { color: hsl(210, 20%, 30%); }
+    .scrollable-content a:hover { color: hsl(210, 20%, 40%); }
 </style>

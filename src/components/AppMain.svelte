@@ -27,7 +27,7 @@
             </div>
         </div>
 
-        <div>
+        <div class="credits">
             <a href="/credits">Image credits and licenses</a>
         </div>
     </div>
@@ -42,6 +42,16 @@
         left: 0;
         right: 0;
         z-index: 1000;
+
+        display: flex;
+        flex-flow: column nowrap;
+        /* set alignment on main axis */
+        justify-content: flex-start;
+        /* set alingment on cross-axis */
+        align-items: flex-start;
+        /* set space between flex lines */
+        align-content: center;
+        gap: 100px;
     }
 
     .scrollable-content
@@ -85,5 +95,26 @@
 
     .scrollable-content a { color: hsla(210, 40%, 40%); }
     .scrollable-content a:hover { color: hsl(290, 30%, 40%); }
+
+    .credits
+    {
+        display: flex;
+        flex-flow: row nowrap;
+        /* set alignment on main axis */
+        justify-content: center;
+        /* set alingment on cross-axis */
+        align-items: center;
+        /* set space between flex lines */
+        align-content: center;
+        gap: 0px;
+    }
+
+    .credits a
+    {
+        padding: 10px;
+        text-align: center;
+        font-family: sans-serif;
+        color: hsl(210, 20%, 30%);
+    }
 </style>
 
