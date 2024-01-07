@@ -1,5 +1,3 @@
-MIT license
-
 This software (programming code) is licensed unde the below MIT license (images used in this software are not covered by the MIT license):
 
 MIT License
