@@ -51,7 +51,7 @@ class={"main-container " + className} style="grid-column-start: {gridCol}; grid-
 
     .symbol
     {
-        font-size: 1.1em;
+        font-size: 110%;
         font-family:sans-serif;
         color: hsl(0, 0%, 80%);
         user-select: none;
@@ -59,7 +59,7 @@ class={"main-container " + className} style="grid-column-start: {gridCol}; grid-
 
     .atomic-number
     {
-        font-size: 0.9em;
+        font-size: 90%;
         font-family:sans-serif;
         color: hsl(0, 0%, 55%);
         user-select: none;

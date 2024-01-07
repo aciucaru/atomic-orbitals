@@ -21,13 +21,13 @@
 <style>
     .main-container
     {
-        width: 9em;
-        max-width: 9em;
+        box-sizing: border-box;
 
+        height: 100%;
         display: flex;
         flex-flow: column nowrap;
         /* set alignment on main axis */
-        justify-content: space-between;
+        justify-content: stretch;
         /* set alingment on cross-axis */
         align-items: stretch;
         /* set space between flex lines */
@@ -35,14 +35,16 @@
         gap: 5px;
 
         margin: 0px;
-        padding: 0px;
+        padding: 10px;
 
+        font-size: 100%;
         color: hsl(0, 0%, 80%);
     }
 
     .table-select-button
     {
         text-align: start;
+        font-size: 100%;
         color: hsl(0, 0%, 80%);
         background-color: hsla(310, 25%, 30%, 0.4);
         border: solid 1px hsla(310, 25%, 45%, 0.4);    

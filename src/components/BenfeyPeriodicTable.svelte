@@ -31,7 +31,8 @@
 <style>
     .main-container
     {
-        width: 1100px;
+        box-sizing: border-box;
+        width: 100%;
 
         display: flex;
         flex-flow: column nowrap;

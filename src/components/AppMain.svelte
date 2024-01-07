@@ -8,34 +8,31 @@
 
 <Background></Background>
 <div class="main-container">
-    <div class="scrollable-content">
-        <div class="main-ui">
-            <div style="grid-column: 1 / 2; grid-row: 1 / 2;">
-                <PeriodicTableSelector></PeriodicTableSelector>
-            </div>
-    
-            <div style="grid-column: 2 / 3; grid-row: 1 / 2;">
-                <ChemicalElementInfo></ChemicalElementInfo>
-            </div>
-    
-            <div style="grid-column: 3 / 4; grid-row: 1 / 3;">
-                <OrbitalsPlotGroup></OrbitalsPlotGroup>
-            </div>
-    
-            <div style="grid-column: 1 / 3; grid-row: 2 / 3;">
-                <PeriodicTableDisplay></PeriodicTableDisplay>
-            </div>
-        </div>
+    <div style="grid-column: 1 / 2; grid-row: 1 / 2;">
+        <PeriodicTableSelector></PeriodicTableSelector>
+    </div>
 
-        <div class="credits">
-            <a href="/credits">Image credits and licenses</a>
-        </div>
+    <div style="grid-column: 2 / 3; grid-row: 1 / 2;">
+        <ChemicalElementInfo></ChemicalElementInfo>
+    </div>
+
+    <div style="grid-column: 3 / 4; grid-row: 1 / 3;">
+        <OrbitalsPlotGroup></OrbitalsPlotGroup>
+    </div>
+
+    <div style="grid-column: 1 / 3; grid-row: 2 / 3;">
+        <PeriodicTableDisplay></PeriodicTableDisplay>
+    </div>
+
+    <div class="credits" style="grid-column: 1 / 4; grid-row: 3 / 4;">
+        <a href="/credits">Image credits and licenses</a>
     </div>
 </div>
 
 <style>
     .main-container
     {
+        box-sizing: border-box;
         position: fixed;
         top: 0;
         bottom: 0;
@@ -43,49 +40,22 @@
         right: 0;
         z-index: 1000;
 
-        display: flex;
-        flex-flow: column nowrap;
-        /* set alignment on main axis */
-        justify-content: flex-start;
-        /* set alingment on cross-axis */
-        align-items: flex-start;
-        /* set space between flex lines */
-        align-content: center;
-        gap: 100px;
-    }
-
-    .scrollable-content
-    {
         overflow: auto;
-        max-height: 98%;
 
-        display: flex;
-        flex-flow: column nowrap;
-        /* set alignment on main axis */
-        justify-content: flex-start;
-        /* set alingment on cross-axis */
-        align-items: flex-start;
-        /* set space between flex lines */
-        align-content: center;
-        gap: 0px;
-    }
-
-    .main-ui
-    {
         display: grid;
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto auto 1fr;
+        grid-template-columns: 10fr 56fr 34fr;
+        grid-template-rows: 2fr 97fr 1fr;
 
         /* align along the row (x) axis */
-        justify-items: start;
+        justify-items: stretch;
         /* align along the column (y) axis */
-        align-items: start;
+        align-items: stretch;
         /* align the grid container itself along the row (x) axis */
-        justify-content: start;
+        justify-content: stretch;
         /* align the grid container itself along the column (y) axis */
-        align-content: start;
+        align-content: stretch;
 
-        gap: 15px 5px;
+        gap: 0px 0px;
             
         padding: 10px;
         margin: 0px;
@@ -93,20 +63,13 @@
         text-align: center;
     }
 
-    .scrollable-content a { color: hsla(210, 40%, 40%); }
-    .scrollable-content a:hover { color: hsl(290, 30%, 40%); }
+    .main-container a { color: hsla(210, 40%, 40%); }
+    .main-container a:hover { color: hsl(290, 30%, 40%); }
 
     .credits
     {
-        display: flex;
-        flex-flow: row nowrap;
-        /* set alignment on main axis */
-        justify-content: center;
-        /* set alingment on cross-axis */
-        align-items: center;
-        /* set space between flex lines */
-        align-content: center;
-        gap: 0px;
+        padding: 10px;
+        text-align: center;
     }
 
     .credits a

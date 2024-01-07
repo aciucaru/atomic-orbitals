@@ -19,6 +19,8 @@
 <style>
     .main-container
     {
+        box-sizing: border-box;
+
         width: 100%;
         
         display: flex;

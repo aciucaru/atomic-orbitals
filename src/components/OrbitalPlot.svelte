@@ -275,12 +275,14 @@
     {
         box-sizing: border-box;
         width: 100%;
+        height: 100%;
         margin: 10px;
-        /* background: radial-gradient(ellipse at top, hsla(207, 38%, 10%, 0.8) 0%, hsla(207, 30%, 5%, 0.8) 50%); */
     }
 
     .plot-canvas
     {
+        box-sizing: border-box;
+        width: 100%;
         border: solid 1px hsl(0, 0%, 20%);
     }
 </style>

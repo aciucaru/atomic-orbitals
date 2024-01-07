@@ -67,20 +67,19 @@
     .main-container
     {
         box-sizing: border-box;
+
         display: grid;
-        /* 100px columns 19 times */
-        grid-template-columns: 3em 3em repeat(5, 120px);
-        /* // 100px columns 18 times */
-        grid-template-rows: 1em 1em repeat(6, 120px);
+        grid-template-columns: 8fr 8fr repeat(5, 16fr);
+        grid-template-rows: 1fr 1fr repeat(6, 5fr);
 
         /* align along the row (x) axis */
         justify-items: center;
         /* align along the column (y) axis */
         align-items: start;
         /* align the grid container itself along the row (x) axis */
-        justify-content: start;
+        justify-content: space-between;
         /* align the grid container itself along the column (y) axis */
-        align-content: start;
+        align-content: space-between;
         column-gap: 0px;
         row-gap: 0px;
 
@@ -94,7 +93,7 @@
         padding: 10px;
 
         font-family: sans-serif;
-        font-size: 1.1em;
+        font-size: 110%;
         color: hsl(0, 0%, 70%);
     }
 
@@ -116,9 +115,9 @@
         margin: 0px;
         padding: 0px;
 
+        font-size: 100%;
+
         outline: solid 1px hsl(0, 0%, 20%);
-        /* border: solid 1px hsl(0, 0%, 50%); */
-        /* box-shadow:0 0 0 1px palegreen; */
         background-color: hsla(210, 40%, 15%, 0.4);
     }
 
@@ -140,9 +139,8 @@
         margin: 0px;
         padding: 0px;
 
+        font-size: 100%;
         outline: solid 1px hsl(0, 0%, 20%);
-        /* border: solid 1px hsl(0, 0%, 50%); */
-        /* box-shadow:0 0 0 1px palegreen; */
     }
 
     .l-cell
@@ -163,9 +161,9 @@
         margin: 0px;
         padding: 0px;
 
+        font-size: 100%;
+
         outline: solid 1px hsl(0, 0%, 20%);
-        /* border: solid 1px hsl(0, 0%, 50%); */
-        /* box-shadow:0 0 0 1px palegreen; */
     }
 
     .n1, .n1-l

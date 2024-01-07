@@ -78,20 +78,29 @@
 </div>
 
 <style>
+    .main-container
+    {
+        box-sizing: border-box;
+        padding: 10px;
+        font-size: 100%;
+    }
+
     .info
     {
         padding: 10px;
         text-align: center;
         font-family: sans-serif;
+        font-size: 100%;
         color: hsl(210, 20%, 45%);
     }
 
     .mendeleev-table
     {
         box-sizing: border-box;
+
         display: grid;
-        grid-template-columns: 2em 2em repeat(17, 50px);
-        grid-template-rows: 1em 1em repeat(9, 60px);
+        grid-template-columns: minmax(0, 2fr) minmax(0, 2fr) repeat(17, 5fr);
+        grid-template-rows: minmax(0, 1fr) minmax(0, 1fr) repeat(10, minmax(0, 3fr));
 
         /* align along the row (x) axis */
         justify-items: center;
@@ -103,18 +112,18 @@
             
         padding: 0px;
         margin: 0px;
+
+        font-size: 90%;
     }
 
     .group
     {
         color: hsl(180, 45%, 45%);
-        /* border: solid 1px hsl(0, 0%, 50%); */
     }
 
     .period
     {
         color: hsl(50, 40%, 55%);
-        /* border: solid 1px hsl(0, 0%, 50%); */
     }
 
     .period-title
@@ -123,56 +132,30 @@
         text-orientation: mixed;
 
         color: hsl(50, 40%, 55%);
-        /* border: solid 1px hsl(0, 0%, 50%); */
     }
 
     .lanthanide-placeholder
     {
-        display: flex;
-        flex-flow: row nowrap;
-        /* set alignment on main axis */
-        justify-content: flex-start;
-        /* set alingment on cross-axis */
-        align-items: center;
-        /* set space between flex lines */
-        align-content: stretch;
-        gap: 0px;
-
         margin: 0px;
-        padding: 0px;
+        padding: 10px;
 
         background-color: hsla(290, 30%, 20%, 0.4);
         border: dashed 1px hsla(290, 30%, 40%, 0.4);
 
-        font-size: 1em;
+        font-size: 100%;
         font-family: sans-serif;
         user-select: none;
     }
 
     .actinide-placeholder
     {
-        display: flex;
-        flex-flow: row nowrap;
-        /* set alignment on main axis */
-        justify-content: flex-start;
-        /* set alingment on cross-axis */
-        align-items: center;
-        /* set space between flex lines */
-        align-content: stretch;
-        gap: 0px;
-
         margin: 0px;
-        padding: 0px;
-
-        margin: 0px;
-        padding: 0px;
-        padding-left: 5px;
-        padding-right: 5px;
+        padding: 10px;
 
         background-color: hsla(180, 50%, 15%, 0.4);
         border: dashed 1px hsla(180, 50%, 25%, 0.4);
 
-        font-size: 1em;
+        font-size: 100%;
         font-family: sans-serif;
         user-select: none;
     }
