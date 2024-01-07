@@ -80,7 +80,7 @@ export const chemicalElements: Array<ChemicalElement> =
         period: 6,
         block: SubshellType.S,
         // 1s2; 2s2 2p6; 3s2 3p6 3d10; 4s2 4p6 4d10; 5s2 5p6; 6s1 (too much for the data model)
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.ALKALI_METAL,
         
     },
@@ -93,7 +93,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 1, 
         period: 7,
         block: SubshellType.S,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.ALKALI_METAL,
         
     },
@@ -161,7 +161,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 2, 
         period: 6,
         block: SubshellType.S,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.ALKALINE_EARTH_METAL,
         
     },
@@ -174,7 +174,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 2, 
         period: 7,
         block: SubshellType.S,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.ALKALINE_EARTH_METAL,
         
     },
@@ -189,7 +189,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 3, 
         period: 6,
         block: SubshellType.F,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.LATHANIDE,
         
     },
@@ -202,7 +202,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 3, 
         period: 6,
         block: SubshellType.F,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.LATHANIDE,
         
     },
@@ -215,7 +215,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 3, 
         period: 6,
         block: SubshellType.F,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.LATHANIDE,
         
     },
@@ -228,7 +228,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 3, 
         period: 6,
         block: SubshellType.F,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.LATHANIDE,
         
     },
@@ -241,7 +241,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 3, 
         period: 6,
         block: SubshellType.F,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.LATHANIDE,
         
     },
@@ -254,7 +254,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 3, 
         period: 6,
         block: SubshellType.F,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.LATHANIDE,
         
     },
@@ -267,7 +267,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 3, 
         period: 6,
         block: SubshellType.F,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.LATHANIDE,
         
     },
@@ -280,7 +280,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 3, 
         period: 6,
         block: SubshellType.F,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.LATHANIDE,
         
     },
@@ -293,7 +293,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 3, 
         period: 6,
         block: SubshellType.F,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.LATHANIDE,
         
     },
@@ -306,7 +306,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 3, 
         period: 6,
         block: SubshellType.F,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.LATHANIDE,
         
     },
@@ -319,7 +319,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 3, 
         period: 6,
         block: SubshellType.F,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.LATHANIDE,
         
     },
@@ -332,7 +332,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 3, 
         period: 6,
         block: SubshellType.F,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.LATHANIDE,
         
     },
@@ -345,7 +345,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 3, 
         period: 6,
         block: SubshellType.F,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.LATHANIDE,
         
     },
@@ -358,7 +358,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 3, 
         period: 6,
         block: SubshellType.F,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.LATHANIDE,
         
     },
@@ -373,7 +373,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 3, 
         period: 7,
         block: SubshellType.F,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.ACTINIDE,
         
     },
@@ -386,7 +386,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 3, 
         period: 7,
         block: SubshellType.F,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.ACTINIDE,
         
     },
@@ -399,7 +399,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 3, 
         period: 7,
         block: SubshellType.F,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.ACTINIDE,
         
     },
@@ -412,7 +412,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 3, 
         period: 7,
         block: SubshellType.F,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.ACTINIDE,
         
     },
@@ -425,7 +425,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 3, 
         period: 7,
         block: SubshellType.F,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.ACTINIDE,
         
     },
@@ -438,7 +438,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 3, 
         period: 7,
         block: SubshellType.F,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.ACTINIDE,
         
     },
@@ -451,7 +451,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 3, 
         period: 7,
         block: SubshellType.F,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.ACTINIDE,
         
     },
@@ -464,7 +464,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 3, 
         period: 7,
         block: SubshellType.F,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.ACTINIDE,
         
     },
@@ -477,7 +477,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 3, 
         period: 7,
         block: SubshellType.F,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.ACTINIDE,
         
     },
@@ -490,7 +490,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 3, 
         period: 7,
         block: SubshellType.F,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.ACTINIDE,
         
     },
@@ -503,7 +503,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 3, 
         period: 7,
         block: SubshellType.F,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.ACTINIDE,
         
     },
@@ -516,7 +516,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 3, 
         period: 7,
         block: SubshellType.F,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.ACTINIDE,
         
     },
@@ -529,7 +529,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 3, 
         period: 7,
         block: SubshellType.F,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.ACTINIDE,
         
     },
@@ -542,7 +542,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 3, 
         period: 7,
         block: SubshellType.F,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.ACTINIDE,
         
     },
@@ -584,7 +584,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 3, 
         period: 6,
         block: SubshellType.D,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.TRANSITION_METAL,
         
     },
@@ -597,7 +597,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 3, 
         period: 7,
         block: SubshellType.D,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.TRANSITION_METAL,
         
     },
@@ -637,7 +637,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 4, 
         period: 6,
         block: SubshellType.D,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.TRANSITION_METAL,
     },
 
@@ -649,7 +649,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 4, 
         period: 7,
         block: SubshellType.D,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.TRANSITION_METAL,
         
     },
@@ -691,7 +691,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 5, 
         period: 6,
         block: SubshellType.D,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.TRANSITION_METAL,
         
     },
@@ -704,7 +704,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 5, 
         period: 7,
         block: SubshellType.D,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.TRANSITION_METAL,
         
     },
@@ -746,7 +746,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 6, 
         period: 6,
         block: SubshellType.D,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.TRANSITION_METAL,
         
     },
@@ -759,7 +759,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 6, 
         period: 7,
         block: SubshellType.D,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.TRANSITION_METAL,
         
     },
@@ -801,7 +801,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 7, 
         period: 6,
         block: SubshellType.D,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.TRANSITION_METAL,
         
     },
@@ -814,7 +814,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 7, 
         period: 7,
         block: SubshellType.D,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.TRANSITION_METAL,
         
     },
@@ -856,7 +856,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 8, 
         period: 6,
         block: SubshellType.D,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.TRANSITION_METAL,
         
     },
@@ -869,7 +869,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 8, 
         period: 7,
         block: SubshellType.D,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.TRANSITION_METAL,
         
     },
@@ -911,7 +911,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 9, 
         period: 6 ,
         block: SubshellType.D,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.TRANSITION_METAL,
         
     },
@@ -924,7 +924,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 9, 
         period: 7,
         block: SubshellType.D,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.OTHER,
         
     },
@@ -966,7 +966,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 10, 
         period: 6,
         block: SubshellType.D,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.TRANSITION_METAL,
         
     },
@@ -979,7 +979,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 10, 
         period: 7,
         block: SubshellType.D,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.OTHER,
         
     },
@@ -1021,7 +1021,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 11, 
         period: 6,
         block: SubshellType.D,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.TRANSITION_METAL,
         
     },
@@ -1034,7 +1034,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 11, 
         period: 7,
         block: SubshellType.D,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.OTHER,
         
     },
@@ -1076,7 +1076,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 12, 
         period: 6,
         block: SubshellType.D,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.TRANSITION_METAL,
         
     },
@@ -1089,7 +1089,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 12, 
         period: 7,
         block: SubshellType.D,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.OTHER,
         
     },
@@ -1157,7 +1157,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 13, 
         period: 6,
         block: SubshellType.P,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.POST_TRANSITION_METAL,
         
     },
@@ -1170,7 +1170,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 13, 
         period: 7,
         block: SubshellType.P,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.OTHER,
         
     },
@@ -1238,7 +1238,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 14, 
         period: 6,
         block: SubshellType.P,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.POST_TRANSITION_METAL,
         
     },
@@ -1251,7 +1251,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 14, 
         period: 7,
         block: SubshellType.P,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.OTHER,
         
     },
@@ -1319,7 +1319,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 15, 
         period: 6,
         block: SubshellType.P,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.POST_TRANSITION_METAL,
         
     },
@@ -1332,7 +1332,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 15, 
         period: 7,
         block: SubshellType.P,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.OTHER,
         
     },
@@ -1400,7 +1400,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 16, 
         period: 6,
         block: SubshellType.P,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.POST_TRANSITION_METAL,
         
     },
@@ -1413,7 +1413,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 16, 
         period: 7,
         block: SubshellType.P,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.OTHER,
         
     },
@@ -1481,7 +1481,7 @@ export const chemicalElements: Array<ChemicalElement> =
         group: 17, 
         period: 6,
         block: SubshellType.P,
-        electronConfig: new ElectronConfiguration(shell(1, s(1))),
+        electronConfig: new ElectronConfiguration(shell(1, s(2)), shell(2, s(2), p(6)), shell(3, s(2), p(6), d(10)), shell(4, s(2))),
         category: ElementCategory.METALLOID,
         
     },
